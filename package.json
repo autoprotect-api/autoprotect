@@ -1,0 +1,22 @@
+{
+  "name": "autoprotect",
+  "version": "1.0.0",
+  "description": "Autoprotect Web Service",
+  "main": "handler.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/autoprotect-api/autoprotect.git"
+  },
+  "author": "Evgeny Rahman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/autoprotect-api/autoprotect/issues"
+  },
+  "homepage": "https://github.com/autoprotect-api/autoprotect#readme",
+  "dependencies": {
+    "@octokit/rest": "^16.28.2"
+  }
+}

@@ -1,0 +1,17 @@
+service: autoprotect
+
+provider:
+  name: aws
+  runtime: nodejs10.x
+
+
+functions:
+  autoprotect:
+    handler: handler.autoprotect
+    events:
+      - http:
+          path: autoprotect
+          method: post
+    environment:
+      GITHUB_ACCESS_TOKEN: ${env:GITHUB_ACCESS_TOKEN}
+
